@@ -1,0 +1,61 @@
+Configuration	stm32tsc
+STM32CubeMX 	4.27.0
+Date	09/24/2018
+MCU	STM32L052K8Tx
+
+
+
+PERIPHERALS	MODES	FUNCTIONS	PINS
+RTC	Activate RTC Clock Source	RTC_VS_RTC_Activate	VP_RTC_VS_RTC_Activate
+RTC	RTC Enabled	RTC_VS_RTC_Calendar	VP_RTC_VS_RTC_Calendar
+RTC	Internal WakeUp	RTC_VS_RTC_WakeUp_intern	VP_RTC_VS_RTC_WakeUp_intern
+SYS	Serial_Wire	SYS_SWCLK	PA14
+SYS	Serial_Wire	SYS_SWDIO	PA13
+SYS	SysTick	SYS_VS_Systick	VP_SYS_VS_Systick
+TSC:Group 4	G4_IO1	TSC_G4_IO1	PA9
+TSC:Group 4	G4_IO2	TSC_G4_IO2	PA10
+TSC:Group 5	G5_IO4	TSC_G5_IO4	PB7
+TSC:Group 5	G5_IO3	TSC_G5_IO3	PB6
+USART2	Asynchronous	USART2_RX	PA3
+USART2	Asynchronous	USART2_TX	PA2
+
+
+
+Pin Nb	PINs	FUNCTIONs	LABELs
+8	PA2	USART2_TX	
+9	PA3	USART2_RX	
+15	PB1	GPIO_EXTI1	BTN
+18	PA8	GPIO_Output	LED
+19	PA9	TSC_G4_IO1	
+20	PA10	TSC_G4_IO2	
+23	PA13	SYS_SWDIO	
+24	PA14	SYS_SWCLK	
+29	PB6	TSC_G5_IO3	
+30	PB7	TSC_G5_IO4	
+
+
+
+SOFTWARE PROJECT
+
+Project Settings : 
+Project Name : stm32tsc
+Project Folder : /home/sungjune/Projects/public/stm32tsc
+Toolchain / IDE : Makefile
+Firmware Package Name and Version : STM32Cube FW_L0 V1.10.0
+
+
+Code Generation Settings : 
+STM32Cube Firmware Library Package : Copy only the necessary library files
+Generate peripheral initialization as a pair of '.c/.h' files per peripheral : No
+Backup previously generated files when re-generating : No
+Delete previously generated files when not re-generated : Yes
+Set all free pins as analog (to optimize the power consumption) : No
+
+
+Toolchains Settings : 
+Compiler Optimizations : 
+
+
+
+
+
